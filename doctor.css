@@ -1,0 +1,187 @@
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+ font-size: 1rem;
+ font-family: 'Poppins', sans-serif;
+ position: relative;
+}
+main{
+min-height: 84vh;
+}
+header{
+background-color: rgb(65, 166, 225);
+color: #ffffff;
+font-style: italic;
+font-size: 0.8em;
+height: 6vh;
+font-weight: bold;
+
+
+}
+.user{
+background-color:whitesmoke;
+box-shadow: 1px 2px 4px rgb(221, 218, 218);
+ font-size: 0.9rem;
+ padding: 5px;
+
+}
+.user img{
+border-radius: 50%;
+}
+/* .user-info li{
+padding: 5px;
+} */
+.main{
+flex-direction: row;
+}
+.left-container{
+flex: 1;
+
+}
+
+.display{
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+/* overflow-x: scroll;
+overflow-y: scroll;
+height: 85vh; */
+
+}
+.display > div{
+width: 200px;
+height: 100px;
+background-color: #ffffff ;
+color: #ffffff;
+border-radius: 10px;
+}
+.display div:hover{
+cursor: pointer;
+background-color: #ffffff !important;
+color: black !important;
+box-shadow:3px 2px 2px 3px rgb(221, 218, 218);
+padding-top: 10px;
+
+}
+.display div:hover a
+{
+color: black !important;
+}
+
+.appoint-head{   
+ color: rgb(65, 166, 225);
+
+    }
+table{
+border-radius: 15px;
+
+}
+table, th, td{
+border-collapse: collapse;
+border: 1px solid rgb(221, 218, 218);
+text-align: center;
+}
+th{
+background-color: whitesmoke;
+}
+th, td{
+padding: 5px;
+}
+tr:hover{
+background-color: whitesmoke;
+cursor: pointer;
+}
+.output{
+flex: 1;
+display: none;
+border-left:1px solid black;
+max-height: 105vh;
+overflow: scroll;
+}
+
+form{
+border-radius: 10px;
+}
+input, textarea{
+border-radius: 10px;
+}
+input:hover , textarea:hover{
+background-color: whitesmoke;
+}
+.diag-form{
+display: none;
+
+}
+.addTreat-form{
+display: none;
+}
+.addDeathRec-form{
+display: none;
+}
+.view-form{
+display: none;
+}
+.addRecording-form{
+display: none;
+}
+.ms-n5{
+margin-left: -40px;
+}
+.patientProfile ul{
+display: grid;
+grid-template-columns: auto auto;
+gap: 5px;
+margin-top: 10px;
+}
+.patientProfile ul li > span{
+margin-left: 5px;
+color: rgb(65, 166, 225);
+}
+
+footer{
+height: 10vh;
+background-color: rgb(65, 166, 225);
+color: #ffffff;
+padding-top: 20px;
+}
+
+@media screen and (max-width:900px){
+    body{
+     font-size: 0.8rem;
+    }
+    .user{
+    font-size: 0.8rem;
+    }
+    .main{
+    flex-direction: column;
+    }
+    .display{
+    display: grid;
+    grid-template-columns: row row;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    }
+    .display div{
+    margin-bottom: 10px;
+    width: 100px;
+box-shadow:3px 2px 2px 3px rgb(221, 218, 218);
+    }
+    .display div:hover{
+background-color:#ffffff;
+color:black;
+
+}
+    
+    th, td{
+padding: 2px;
+}
+.output{
+border-top:1px solid black;
+
+}
+}
+
